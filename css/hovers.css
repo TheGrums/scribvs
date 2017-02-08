@@ -1,0 +1,99 @@
+@media (min-width: 992px){
+
+  .hover-green:hover{
+    color:green;
+    cursor:pointer;
+  }
+  .panel-nav-item:hover{
+    opacity:1;
+  }
+  .delete-topic:hover{
+    color:red;
+  }
+
+  .profile-img-setting:hover{
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+  }
+  .com-edit:hover, .com-delete:hover{
+    color:red;
+  }
+  .btn-submit:hover, .btn-primary:hover{
+  	background-color:#616BBB;
+  	color:white;
+  	box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.2) inset;
+    border-color:#616BBB;
+  }
+  .box-button:focus + label,
+  .box-button + label:hover {
+      background-color: red;
+  }
+  .delete:hover{
+  	opacity:1;
+  }
+  .under-pub:hover .glyphicon{
+  	transform:rotateZ(360deg) scale(1.5,1.5);
+  	-webkit-transform:rotateZ(360deg) scale(1.5,1.5);
+  	-moz-transform:rotateZ(360deg) scale(1.5,1.5);
+  }
+  .portable-nav-item:hover{
+  	transform:scale(1.05, 1.05);
+  	color:black;
+  }
+  .send-file:hover, .place-t-post:hover{
+  	color:#616BBB;
+  }
+  .complement:hover{
+  	color:#616BBB;
+  }
+  .btn-primary:active{
+    background-color:#616BBB !important;
+    color:white;
+    box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.2) inset;
+    border-color:#616BBB !important;
+  }
+  .btn-primary:hover{
+    background-color:#616BBB !important;
+    color:white;
+    box-shadow: -1px 2px 10px 3px rgba(0, 0, 0, 0.2) inset;
+    border-color:#616BBB !important;
+  }
+  .box-traditional:hover{
+  	text-decoration: underline;
+  	opacity:1;
+  }
+  .panel-down:hover, .panel-up:hover, .panel-delete:hover{
+    opacity:1;
+  }
+  #profile-image:hover .profile-hover{
+    opacity:0.7;
+  }
+  #lightbox-close:hover{
+    transform:rotateZ(360deg) scale(1.5,1.5);
+    -webkit-transform:rotateZ(360deg) scale(1.5,1.5);
+    -moz-transform:rotateZ(360deg) scale(1.5,1.5);
+    color:red;
+  }
+  #login-btn:hover{
+    border:1px solid gray;
+  }
+  #add-file:hover{
+    color:#7B83C6;
+  }
+  .topic-control:nth-child(2):hover .glyphicon, .msg-frm-edit:nth-child(2):hover .glyphicon{
+    color:green;
+    opacity:1;
+    cursor:pointer;
+  }
+  .topic-control:nth-child(1):hover .glyphicon, .msg-frm-edit:nth-child(1):hover .glyphicon{
+    color:red;
+    opacity:1;
+    cursor:pointer;
+  }
+  .btn-dead:hover{
+    background-color: black;
+    color:white;
+  }
+
+}
