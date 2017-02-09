@@ -1,3 +1,4 @@
 /uploads/
 /config/
 *.sql
+.DS_Store
