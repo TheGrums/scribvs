@@ -155,6 +155,7 @@ function buildCom(com,pos){
 }
 
 function shortPub(){
+	return; // Temporary avoiding function
 	$('.text-pub').each(function(event){
 
 			var max_length = 300;
