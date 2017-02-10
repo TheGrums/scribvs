@@ -32,8 +32,7 @@
 					<input id="file-input" type="file" multiple="" style="display:none;"></input>
 				</div>
 				<div class="dialog-box-help">
-					<img src="./pictures/file-box-help-1.jpg" />
-					<img src="./pictures/file-box-help-2.jpg" style="display:none;"/>
+					<span class="help-block"><strong style="font-size:13px;">Envoi</strong> appuyez sur "+" pour envoyer un fichier.<br />Ensuite sélectionnez un destinataire (amis,classe,année).</span>
 				</div>
 			</div>
 

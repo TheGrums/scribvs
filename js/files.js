@@ -37,7 +37,6 @@ $.ajax({
 $('body').on('click', "#add-file",function(){
   $(this).css("display","none");
   $(".send-file").css("display","inline-block").addClass("animated fadeInRight");
-  $("img[src='./pictures/file-box-help-1.jpg']").fadeOut("slow",function(){$("img[src='./pictures/file-box-help-2.jpg']").fadeIn();});
 });
 
 $('body').on('click',".send-file",function(){
