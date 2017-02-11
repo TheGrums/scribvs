@@ -3,9 +3,9 @@
 ob_start();
 session_start();
 
-if(isset($_COOKIE['sessid']) || isset($_SESSION['co_elements'])){
+if(isset($_COOKIE['sessid']) || isset($_SESSION['co_elements']) || isset($_SESSION['user'])){
 
-	if(!isset($_SESSION['co_elements'])){
+	if(!isset($_SESSION['co_elements'])&&!isset($_SESSION['user'])){
 
 		require("./AJAX/decode_cookie.php");
 
