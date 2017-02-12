@@ -265,6 +265,7 @@ public function getJsonData(){
          $value = $value->getJsonData();
       }
    }
+   unset($var['_pass']);
    return $var;
 }
 public function getJsonFormat(){
