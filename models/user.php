@@ -201,7 +201,7 @@ public function CompareCookie($uniqid, $ip, $first, $name){
 
     $_SESSION['id'] = uniqid(rand(),true);
 
-    $this->setPass("");
+    //$this->setPass("");
     $_SESSION['user']=$this;
 
     $_SESSION['co_elements'] = array(
@@ -236,22 +236,22 @@ public function CreateCookie(){
     $manager->Update($this);
 
 
-        $_SESSION['co_element'] = array(
+    $_SESSION['co_element'] = array(
 
-          'uid' => $this->_id,
-          'pass' => $this->_pass,
-          'first' => $this->_firstname,
-          'name' => $this->_familyname,
-          'class' => $this->_class,
-          'img' => $this->_img,
-          'level' => $this->_level,
-          'friends' => $this->Friends(),
-          'signature' => $this->_signature,
-          'lesson' => $this->_lesson
+      'uid' => $this->_id,
+      'pass' => $this->_pass,
+      'first' => $this->_firstname,
+      'name' => $this->_familyname,
+      'class' => $this->_class,
+      'img' => $this->_img,
+      'level' => $this->_level,
+      'friends' => $this->Friends(),
+      'signature' => $this->_signature,
+      'lesson' => $this->_lesson
 
-        );
+    );
 
-        $_SESSION['user']=$this;
+    $_SESSION['user']=$this;
 
     $cookiedata = password_hash($_SERVER['REMOTE_ADDR'],PASSWORD_BCRYPT,['cost' => 6]).'----'.password_hash($this->_firstname,PASSWORD_BCRYPT,['cost' => 6]).'----'.password_hash($this->_familyname,PASSWORD_BCRYPT,['cost' => 6]).'----'.$unique_id ;
 
