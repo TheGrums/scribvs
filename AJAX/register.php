@@ -54,29 +54,7 @@
 		$grman = new GroupManager();
 		$group = $grman->getGroupByName($class);
 
-		$mail = new PHPMailer(true);
-
-		$mail->IsSMTP(); // telling the class to use SMTP
-		$mail->SMTPOptions = array(
-			'ssl' => array(
-				'verify_peer' => false,
-				'verify_peer_name' => false,
-				'allow_self_signed' => true
-			)
-		);                 // enables SMTP debug information (for testing)
-		$mail->SMTPAuth   = true;
-		$mail->Host = 'scribvs.com';
-		$mail->Port = 25;                  // set the SMTP port for the GMAIL server
-		$mail->addCustomHeader('List-Unsubscribe', '<webmaster@scribvs.com>, <http://scribvs.com>');
-		$mail->Username   = "webmaster@scribvs.com"; // SMTP account username
-		$mail->Password   = "BigBang3640";
-		$mail->AddReplyTo('no-reply@scribvs.com', 'Scribvs');
-		$mail->AddAddress($us->Email(), $us->WholeName());
-		$mail->SetFrom('notif-bot@scribvs.com', 'Notification Scribvs');
-		$mail->CharSet = "UTF-8";
-		$mail->Subject = 'Confirmation d\'inscription.';
-		$mail->AltBody = 'To view the message, please use an HTML compatible email viewer!'; // optional - MsgHTML will create an alternate automatically
-
+		$sub = 'Confirmation d\'inscription.';
 		$mailcontent = "
 
 		<div style='Margin-left: 20px;Margin-right: 20px;'>
@@ -90,9 +68,7 @@
 		</div>
 
 		";
-		$mc = file_get_contents('https://scribvs.com/controllers/mail-top.html').$mailcontent.file_get_contents('https://scribvs.com/controllers/mail-bot.html');
-		$mail->MsgHTML($mc); // attachment
-		$mail->Send();
+		sendMail($us,$sub,$mailcontent);
 
 		if(!$group){
 			$group = new Group(array(
