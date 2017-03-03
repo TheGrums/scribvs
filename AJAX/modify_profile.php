@@ -31,7 +31,7 @@ if(isset($_SESSION["user"])){
     foreach ($_POST as $key => $value){
       $method = 'set'.ucfirst($key);
       if (method_exists($_SESSION["user"], $method)){
-        $_SESSION["user"]->$method($value);
+        $_SESSION["user"]->$method(($method=='setPass'?password_hash($value,PASSWORD_BCRYPT,['cost' => 10]):$value));
       }
     }
   }
