@@ -95,7 +95,13 @@
 						</div>
 						<div class="form-group" style="display:inline-block;">
 							<input id = "pass-lg-input" type="password" class="form-control" placeholder="Mot de passe"></input>
+							<span class="help-block" style="color: gray;ext-align:center;margin-bottom:0px;">
+	                    &nbsp<a href = "./recover.php" style="color:gray;"> Mot de passe perdu ?</a><br />
+	            </span>
 						</div><br />
+						<div class="form-group" style="display:inline-block;">
+							<button class="form-control" id="login-btn"><span class="glyphicon glyphicon-menu-right"></span></button>
+						</div>
 						<span class="help-block" id="pass-fail" style="color: red; display: none;text-align:center;">
                     Mot de passe incorrect.<br />
             </span>
@@ -105,9 +111,6 @@
 						<span class="help-block" id="error-fail" style="color: red; display: none;text-align:center;">
                     Une erreur s'est produite, rechargez la page et réessayez.<br />
             </span>
-						<div class="form-group" style="display:inline-block;">
-							<button class="form-control" id="login-btn"><span class="glyphicon glyphicon-menu-right"></span></button>
-						</div>
 					</form>
 
 				</div>
