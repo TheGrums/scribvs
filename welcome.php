@@ -90,13 +90,13 @@
 				<div class="col-md-6 col-md-offset-3">
 
 					<form style="display:inline-block;">
-						<div class="form-group" style="display:inline-block;">
+						<div class="form-group" style="display:inline-block;vertical-align:top;">
 							<input id = "mail-lg-input" type="text" class="form-control" placeholder="E-mail"></input>
 						</div>
-						<div class="form-group" style="display:inline-block;">
+						<div class="form-group" style="display:inline-block;vertical-align:top;">
 							<input id = "pass-lg-input" type="password" class="form-control" placeholder="Mot de passe"></input>
 							<span class="help-block" style="color: gray;ext-align:center;margin-bottom:0px;">
-	                    &nbsp<a href = "./recover.php" style="color:gray;"> Mot de passe perdu ?</a><br />
+	                    <a href = "./recover.php" style="color:gray;"> &nbsp Mot de passe perdu ?</a><br />
 	            </span>
 						</div><br />
 						<div class="form-group" style="display:inline-block;">
