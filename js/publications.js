@@ -244,7 +244,6 @@ function loadPic(file) {
 		}
 	}
 	else{
-		console.log("pipi");
 		$("#img-preview .clearfix").eq(0).children('.mosaicflow__column').append('<div class="delete" data-transit-id="'+id+'"><span class="glyphicon glyphicon-remove"></span></div><img class="transit-image" src="'+src+'" style="position: static; visibility: visible; display: block;" />');
 	}
 }
